@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Video Slider</title>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <script src="js/prefixfree.min.js"></script>
+</head>
+
+<body>
+
+    <div id="loading"></div>
+
+    <div id="wrapper">
+        <div id="video-compare-container">
+            <video loop preload="auto">
+                <source src="half-1440.mp4" class="top">
+            </video>
+            <div id="video-clipper">
+                <video loop preload="auto">
+                    <source src="half-1440.mp4" class="bottom">
+                </video>
+            </div>
+            <div id="brackets">
+                <img src="img/crossfade_brackets.png" draggable="false" class="unselectable" />
+            </div>
+        </div>
+    </div>
+    <div id="buttonbar">
+        <button class='replay' id="restart" onclick="restart();">[]</button>
+        <button class='pause' id="play" onclick="vidplay();">&gt;</button>
+        <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+    </div>
+
+    <script src='js/jquery.min.js'></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>

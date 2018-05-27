@@ -1,0 +1,140 @@
+body {
+    background: #333;
+    margin: 0;
+}
+
+#wrapper {
+    min-height: 600px;
+    display: block;
+    clear: both;
+}
+
+#loading {
+    width: 1280px;
+    height: 720px;
+    background: red;
+}
+
+#video-compare-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    transform: scale(50%,100%);
+}
+
+#video-compare-container > video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+
+}
+
+#video-clipper {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    border-right: 4px solid white;
+}
+
+#video-clipper video {
+    width: 100%;
+    height: auto;
+    postion: absolute;
+}
+
+
+.bottom {
+    display: box;
+    bottom: 0;
+}
+
+.top {
+    display: box;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+#brackets {
+    margin-top: 45vh;
+    z-index: 5;
+    position: absolute;
+    cursor: grab;
+}
+
+#brackets img {
+  width: 20vh;
+  height: auto;
+}
+
+#buttonbar {
+    margin: 10px;
+    width: 90%;
+    height: 35px;
+}
+
+
+progress {
+    color: #f00;
+    width: 70%;
+    height: 32px;
+    border: 1px solid black;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5) inset;
+}
+
+button {
+    text-indent:-9999px;
+    width:32px;
+    height:32px;
+    border:none;
+    cursor:pointer;
+    vertical-align: bottom;
+    background:transparent url('../img/buttons.png') no-repeat 0 0;
+}
+
+.pause {
+    background-position:-38px 0;
+}
+
+.stop {
+    background-position:-76px 0;
+}
+
+.volume-plus {
+    background-position:-114px 0;
+}
+
+.volume-minus {
+    background-position:-152px 0;
+}
+
+.mute {
+    background-position:-190px 0;
+}
+
+.unmute {
+    background-position:-228px 0;
+}
+
+.replay {
+    background-position:-266px 0;
+}
+
+.unselectable {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
